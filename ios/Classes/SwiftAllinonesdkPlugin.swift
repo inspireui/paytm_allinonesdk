@@ -67,6 +67,11 @@
          print("Response in Plugin")
          print(url.absoluteString)
         let dict = self.separateDeeplinkParamsIn(url: url.absoluteString, byRemovingParams: nil)
+
+        if(dict["isStripe"] == "true") {
+            return false;
+        }
+
         self.handleResponseAppInvoke(dict) // MARK: Called to send response to flutter app in result parameter.
         return true
      }
