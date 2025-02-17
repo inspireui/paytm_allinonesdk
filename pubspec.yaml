@@ -4,8 +4,8 @@ version: 1.2.2+hotfix1.0
 homepage: "https://developer.paytm.com/docs/all-in-one-sdk/"
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
-  flutter: ">=1.10.0"
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: '>=3.3.0'
 
 dependencies:
   flutter:
