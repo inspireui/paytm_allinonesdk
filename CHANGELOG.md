@@ -121,6 +121,36 @@ Plugin for paytm all in one sdk
  plugin for paytm all in one sdk
 
    ## 1.2.2
-- Upi Intent support in IOS
+- Bug fixing & Upi Intent support in IOS
+ 
+ plugin for paytm all in one sdk
+
+   ## 1.2.3
+- Bug fixing
+ 
+ plugin for paytm all in one sdk
+
+   ## 1.2.4
+- Bug fixing
+ 
+ plugin for paytm all in one sdk
+
+    ## 1.2.5
+- Bug fixing
+ 
+ plugin for paytm all in one sdk
+
+     ## 1.2.6
+- Added JDK 17 Support
+ 
+ plugin for paytm all in one sdk
+
+     ## 1.2.7
+- Bug Fixing
+ 
+ plugin for paytm all in one sdk
+
+      ## 1.2.8
+- Bug Fixing
  
  plugin for paytm all in one sdk

@@ -68,6 +68,7 @@
          print(url.absoluteString)
         let dict = self.separateDeeplinkParamsIn(url: url.absoluteString, byRemovingParams: nil)
 
+        // fix(DeepLink): conflict return callback url with stripe
         if(dict["isStripe"] == "true") {
             return false;
         }
