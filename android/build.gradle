@@ -17,14 +17,15 @@ buildscript {
 
 rootProject.allprojects {
     repositories {
-         maven {
-            url "https://artifactory.paytm.in/libs-release-local"
-        }
-        mavenLocal()
+        // mavenLocal() // Add this first for local testing
         google()
-        gradlePluginPortal()
         mavenCentral()
-        
+        maven {
+            url "https://artifactory.paytm.in/libs-release-local"
+            content {
+                includeGroupByRegex "com\\.paytm.*"
+            }
+        }
     }
 }
 
@@ -60,5 +61,5 @@ android {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-     implementation'com.paytm.appinvokesdk:appinvokesdk:1.6.18'
+    implementation 'com.paytm.appinvokesdk:appinvokesdk:1.6.18'
 }
