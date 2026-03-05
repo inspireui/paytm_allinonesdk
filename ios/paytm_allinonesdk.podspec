@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'paytm_allinonesdk'
-  s.version          = '1.2.2'
+  s.version          = '1.2.8'
   s.summary          = 'Paytm All in one sdk plugin.'
   s.description      = <<-DESC
 A new flutter plugin project.

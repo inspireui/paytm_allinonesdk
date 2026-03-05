@@ -8,7 +8,7 @@
 Add this to your package's pubspec.yaml file:
 
 dependencies:
-  paytm_allinonesdk: ^1.2.1
+  paytm_allinonesdk: ^1.2.7
 ```
 
 2. Install it

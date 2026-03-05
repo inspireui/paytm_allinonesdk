@@ -30,12 +30,12 @@ class AllInOneSdkPlugin : FlutterPlugin, ActivityResultListener, MethodCallHandl
     private var activity: Activity? = null
     private var isCallbackProvided = false
 
-    override fun onAttachedToEngine(flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
+    override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
         channel = MethodChannel(flutterPluginBinding.binaryMessenger, "allinonesdk")
         channel.setMethodCallHandler(this)
     }
 
-    override fun onMethodCall(call: MethodCall, result: Result) {
+    override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
         if (call.method == "startTransaction" ) {
             startTransaction(call)
             this.result = result
@@ -45,7 +45,7 @@ class AllInOneSdkPlugin : FlutterPlugin, ActivityResultListener, MethodCallHandl
         }
     }
 
-    override fun onDetachedFromEngine(binding: FlutterPlugin.FlutterPluginBinding) {
+    override fun onDetachedFromEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
         channel.setMethodCallHandler(null)
     }
 
